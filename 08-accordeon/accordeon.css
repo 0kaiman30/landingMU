@@ -1,0 +1,57 @@
+#accordion .page__section--5 {
+  background-color: #ffe0b2;
+}
+
+#accordion .container {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+#accordion section {
+  color: white;
+}
+
+.accordion__name p {
+  color: white;
+}
+
+.exclusive {
+  padding: 10px;
+  width: 80%;
+}
+
+#accordion .accordion__name {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: rgb(0 0 0 / 20%) 0px 2px 1px -1px,
+    rgb(0 0 0 / 14%) 0px 1px 1px 0px, rgb(0 0 0 / 12%) 0px 1px 3px 0px;
+  background-color: rgb(205, 0, 0);
+  padding: 20px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+#accordion .accordion__content {
+  margin: 10px;
+  display: none;
+}
+
+#accordion .accordion__wrap.accordion__active .accordion__content {
+  display: block;
+}
+
+#accordion .accordion__wrap.accordion__active .plus {
+  rotate: 180deg;
+}
+
+#accordion .plus {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+#accordion .accrodionHeadImage {
+  src: url("https://www.iconpacks.net/icons/2/free-arrow-down-icon-3101-thumb.png");
+}

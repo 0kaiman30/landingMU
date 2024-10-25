@@ -1,0 +1,95 @@
+.page__section--contact {
+  background-color: #ffffff;
+  padding: 60px 20px;
+}
+
+#contact {
+  background-color: #ffffff;
+  padding: 60px 20px;
+}
+
+#contact h2 {
+  color: #d50032;
+  font-size: 36px;
+  padding: 20px;
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+#contact p {
+  color: #666;
+  margin-bottom: 40px;
+  font-size: 18px;
+  text-align: center;
+}
+
+#contact .row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-around;
+}
+
+#contact .col-4 {
+  background-color: #f8f8f8;
+  border-radius: 10px;
+  padding: 25px;
+  width: calc(33.333% - 20px); /* Занимает 1/3 ширины */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 2px solid #d50032;
+}
+
+#contact .col-4:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.25);
+}
+
+#contact .col-4 h3 {
+  margin-bottom: 15px;
+  font-size: 26px;
+  color: #d50032;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+#contact .col-4 p {
+  margin: 8px 0;
+  color: #333;
+  text-align: center;
+}
+
+#contact a {
+  color: #d50032;
+  text-decoration: none;
+  font-weight: bold;
+  display: block;
+  margin-top: 10px;
+  text-align: center;
+}
+
+#contact a:hover {
+  text-decoration: underline;
+  color: #000;
+}
+
+/* Адаптация для мобильных устройств */
+@media (max-width: 768px) {
+  #contact .col-4 {
+    width: 100%; /* На экранах до 768px каждая колонка занимает 100% */
+  }
+
+  #contact h2 {
+    font-size: 28px;
+  }
+
+  #contact p {
+    font-size: 16px;
+    margin-bottom: 30px;
+  }
+
+  #contact .col-4 h3 {
+    font-size: 24px;
+  }
+}

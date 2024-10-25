@@ -1,0 +1,195 @@
+h2 {
+  color: rgb(0, 0, 0);
+}
+
+main .main__wrap {
+  text-align: left;
+}
+
+main .open {
+  padding: 5px 10px;
+  font-size: 20px;
+  border-radius: 5%;
+  background-color: #ffffff;
+  color: #000000;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+main .open:hover {
+  background-color: #cc0000;
+  color: white;
+}
+
+.wrap {
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+
+.modal-backdrop {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  backdrop-filter: blur(10px);
+  z-index: 9998;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.5s ease;
+}
+
+.show-modal-backdrop {
+  opacity: 1;
+  visibility: visible;
+  width: 100%;
+}
+
+.modal {
+  background-color: white;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 500px;
+  transform: translate(-50%, -50%);
+  height: 300px;
+  z-index: 2;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.5s ease;
+  overflow-y: auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.show-modal {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal__header h2 {
+  font-size: 25px;
+  padding: 0 0 0 0;
+}
+
+.modal__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid black;
+  padding: 20px;
+  height: 10%;
+}
+
+.modal__header .close {
+  color: black;
+  cursor: pointer;
+}
+
+.modal-content {
+  height: 90%;
+  display: flex;
+  justify-content: center;
+}
+
+.modal-content form {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 10px;
+  height: 100%;
+  width: 50%;
+  padding: 0 20px;
+}
+
+.form input,
+.form button {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.form button {
+  background-color: #ff0000;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.form button:hover {
+  background-color: #cc0000;
+}
+
+.modal-greeting {
+  padding: 0 20px 0 0;
+  font-size: 20px;
+  color: rgb(255, 0, 0);
+  display: none;
+}
+
+.show-modal-greeting {
+  opacity: 1;
+  padding: 100px 40px 0px 90px;
+  display: inline-block;
+}
+
+.error {
+  opacity: 1;
+  padding: 100px 70px 0 90px;
+  display: inline-block;
+  color: red;
+}
+
+.form-display-changer {
+  display: none;
+}
+
+.open:link,
+.open:visited {
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 15px 40px;
+  display: inline-block;
+  border-radius: 100px;
+  transition: all 0.2s;
+  position: absolute;
+}
+
+.open:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.open:active {
+  transform: translateY(-1px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.open-white {
+  background-color: #fff;
+  color: #000000;
+}
+
+.open::after {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  border-radius: 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all 0.4s;
+}
+
+.open-white::after {
+  background-color: #fff;
+}

@@ -1,0 +1,109 @@
+#filterDynamic .page__section--4 {
+  background-color: #ffffff;
+  padding: 40px 20px;
+}
+
+#filterDynamic .filter-2-output {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 40px 0;
+}
+
+#filterDynamic .filter-2-buttonWrap {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+#filterDynamic .filter-2-product-card {
+  width: 100%;
+  max-width: 200px;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+#filterDynamic .filter-2-product-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+#filterDynamic .filter-2-product-image {
+  width: 100%;
+  height: 180px;
+  background-size: cover;
+  background-position: center;
+}
+
+#filterDynamic .filter-2-product-info {
+  padding: 15px;
+  text-align: center;
+}
+
+#filterDynamic .filter-2-product-info h3 {
+  margin: 10px 0;
+  font-size: 1.3em;
+  color: #d50032;
+}
+
+#filterDynamic .filter-2-product-info p {
+  color: #000;
+  font-size: 1.1em;
+}
+
+#filterDynamic .filter-2-active {
+  background-color: #d50032;
+  color: #fff;
+  transform: scale(1.1);
+  box-shadow: 0 0 15px rgba(255, 0, 0, 0.5);
+}
+
+#filterDynamic button {
+  padding: 12px 25px;
+  margin: 10px;
+  border: 2px solid #d50032;
+  border-radius: 5px;
+  background-color: #fff;
+  color: #000;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+
+#filterDynamic button:hover {
+  background-color: #d50032;
+  color: #fff;
+  box-shadow: 0 5px 10px rgba(255, 0, 0, 0.2);
+  transform: translateY(-5px);
+}
+
+#filterDynamic .searchInput {
+  padding: 10px;
+  width: 60%;
+  max-width: 400px;
+  border: 2px solid #d50032;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+#filterDynamic .filter-2-searchButton,
+#filterDynamic .filter-2-clearButton {
+  padding: 10px 20px;
+  border: 2px solid #d50032;
+  border-radius: 5px;
+  background-color: #d50032;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#filterDynamic .filter-2-searchButton:hover,
+#filterDynamic .filter-2-clearButton:hover {
+  background-color: #000;
+}

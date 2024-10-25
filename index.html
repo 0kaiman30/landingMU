@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Manchester United</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="baza.css" />
+    <link rel="stylesheet" href="./media.css" />
+    <link rel="stylesheet" href="./01-header/header.css" />
+    <link rel="stylesheet" href="./02-burger/burger.css" />
+    <link rel="stylesheet" href="./03-modal/modal.css" />
+    <link rel="stylesheet" href="./04-newsSwiper/newsSwiper.css" />
+    <link rel="stylesheet" href="./05-bestSellers/bestSellers.css" />
+    <link rel="stylesheet" href="./06-simpleFilter/simpleFilter.css" />
+    <link rel="stylesheet" href="./07-dynamicFilter/dynamicFilter.css" />
+    <link rel="stylesheet" href="./08-accordeon/accordeon.css" />
+    <link rel="stylesheet" href="./09-doubleAccordeon/doubleAccordeon.css" />
+    <link rel="stylesheet" href="./10-customSection/custom.css" />
+    <link rel="stylesheet" href="./11-favSection/favSection.css" />
+    <link rel="stylesheet" href="./12-cart/cart.css" />
+    <link rel="stylesheet" href="./13-contacts/contacts.css" />
+    <link rel="stylesheet" href="./14-footer/footer.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="//code.jivosite.com/widget/lKSGMIfkdD" async></script>
+  </head>
+  <body class="page">
+    <header class="page__header">
+      <div class="container">
+        <div class="header__nav">
+          <img
+            src="https://фк-лого.рф/wp-content/uploads/manchester-united-big.png"
+            alt="Manchester United Logo"
+          />
+          <nav>
+            <ul class="nav">
+              <li><a href="#news">Announcements</a></li>
+              <li><a href="#bestsellers">Bestsellers</a></li>
+              <li><a href="#accessories">Accessories</a></li>
+              <li><a href="#filterDynamic">Gifts</a></li>
+            </ul>
+          </nav>
+          <div class="mobile-btn">
+            <span></span>
+          </div>
+        </div>
+      </div>
+      <div class="backdrop"></div>
+    </header>
+
+    <main class="page__main">
+      <div class="container main__container">
+        <div class="main__wrap">
+          <h1>
+            The new EPL season<br />
+            has started
+          </h1>
+          <p>Form an annual subscription for home matches</p>
+
+          <div class="wrap">
+            <button class="open">Buy a subscription</button>
+          </div>
+
+          <div class="modal-backdrop">
+            <div class="modal">
+              <div class="modal__header">
+                <h2>Enter your info</h2>
+                <div class="close">X</div>
+              </div>
+              <div class="modal-content">
+                <form class="form">
+                  <input class="username" type="text" placeholder="Your name" />
+                  <input class="tel" type="tel" placeholder="Your phone" />
+                  <button type="submit">Apply</button>
+                </form>
+              </div>
+              <div class="modal-greeting"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <section id="news" class="page__section page__section--1">
+      <h2>Announcements and events</h2>
+      <div class="swiper swiper-container swiper-2">
+        <div class="swiper-wrapper"></div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+    </section>
+
+    <section id="bestsellers" class="page__section page__section--2">
+      <h2>Our bestsellers</h2>
+      <div class="swiper-container swiper-1 swiper">
+        <div class="swiper-wrapper"></div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+    </section>
+
+    <section id="accessories" class="page__section page__section--3">
+      <div class="container filter-1">
+        <form class="form">
+          <input type="text" class="searchInput filter-1-input" />
+          <button class="searchButton filter-1-searchButton">Search</button>
+          <button class="clearButton filter-1-clearButton">Clear</button>
+        </form>
+        <div class="buttonWrap filter-1-buttonWrap"></div>
+        <div class="output filter-1-output"></div>
+      </div>
+    </section>
+
+    <section id="filterDynamic" class="page__section page__section--4">
+      <div class="container filter-2">
+        <form class="form">
+          <input type="text" class="searchInput filter-2-input" />
+          <button class="searchButton filter-2-searchButton">Search</button>
+          <button class="clearButton filter-2-clearButton">Clear</button>
+        </form>
+        <div class="filterDynamic-selectWrap filter-2-selectWrap">
+          <select class="categorySelect filter-2-categorySelect">
+            <option value="all menu">All Menu</option>
+          </select>
+        </div>
+        <div class="filterDynamic-output filter-2-output"></div>
+      </div>
+    </section>
+
+    <section id="accordion" class="page__section page__section--5">
+      <div class="container">
+        <div class="accordion"></div>
+      </div>
+    </section>
+
+    <section id="accordion-double" class="page__section page__section--6">
+      <div class="container">
+        <div class="accordion-double"></div>
+      </div>
+    </section>
+
+    <section id="custom-section"></section>
+
+    <section id="users" class="page__section page__section--8">
+      <h2>PLAYER'S OF THE MONTH</h2>
+      <div class="container">
+        <div class="row">
+          <div class="col-6">
+            <div class="row users"></div>
+          </div>
+          <div class="col-6">
+            <img class="finalImage" src="" alt="picture" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="cart" class="page__section page__section--9">
+      <div class="container cart__container">
+        <h2>United Eats</h2>
+        <div id="cart__product-list"></div>
+
+        <h3>Your Cart</h3>
+        <div id="cart-list"></div>
+
+        <div id="total-price">Total: 0 dollars</div>
+        <button id="cart__clear-cart">Clean cart</button>
+      </div>
+    </section>
+
+    <section id="contact" class="page__section page__section--contact">
+      <div class="container">
+        <h2>CONTACT US</h2>
+        <div class="row">
+          <div class="col-4 contact-card">
+            <h3>Address</h3>
+            <p>Manchester United FC</p>
+            <p>Old Trafford, Sir Matt Busby Way</p>
+            <p>Manchester, M16 0RA, UK</p>
+          </div>
+          <div class="col-4 contact-card">
+            <h3>Phone</h3>
+            <p>
+              Customer Service: <a href="tel:+441618688000">+44 161 868 8000</a>
+            </p>
+            <p>Tickets: <a href="tel:+441614441894">+44 161 444 1894</a></p>
+          </div>
+          <div class="col-4 contact-card">
+            <h3>Email</h3>
+            <p>
+              General Inquiries:
+              <a href="mailto:info@manutd.com">info@manutd.com</a>
+            </p>
+            <p>
+              Support:
+              <a href="mailto:support@manutd.com">support@manutd.com</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__left">
+          <h2>Manchester United Store</h2>
+        </div>
+        <div class="footer__right"></div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./01-header/header.js"></script>
+    <script src="./02-burger/burger.js"></script>
+    <script src="./03-modal/modal.js"></script>
+    <script src="./04-newsSwiper/newsSwiper.js"></script>
+    <script src="./05-bestSellers/bestSellers.js"></script>
+    <script src="./06-simpleFilter/simpleFilter.js"></script>
+    <script src="./07-dynamicFilter/dynamicFilter.js"></script>
+    <script src="./08-accordeon/accordeon.js"></script>
+    <script src="./09-doubleAccordeon/doubleAccordeon.js"></script>
+    <script src="./10-customSection/custom.js"></script>
+    <script src="./11-favSection/favsection.js"></script>
+    <script src="./12-cart/cast.js"></script>
+    <script src="./13-contacts/contacts.js"></script>
+    <script src="./14-footer/footer.js"></script>
+  </body>
+</html>

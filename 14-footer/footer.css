@@ -1,0 +1,39 @@
+.footer {
+  background-color: #d50032;
+  color: white;
+  padding: 20px 0;
+}
+
+.footer .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto; 
+  padding: 0 20px;
+}
+
+.footer .footer__left h2 {
+  font-size: 24px;
+  margin: 0; 
+  white-space: nowrap; 
+  color: white;
+}
+
+.footer__right {
+  display: flex; 
+  align-items: center; 
+}
+
+.footer .social-icon {
+  margin-left: 20px; 
+  display: inline-block; 
+  width: 24px; 
+  height: 24px; 
+  color: white; 
+  transition: color 0.3s;
+}
+
+.footer .social-icon:hover {
+  color: #ffcc00;
+}

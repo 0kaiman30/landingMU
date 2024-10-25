@@ -1,0 +1,107 @@
+#accessories .page__section--3 {
+  background-color: #f5f5f5;
+}
+
+#accessories .output {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 30px 0 0 0;
+  justify-content: center;
+}
+
+#accessories .buttonWrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+#accessories .product-card {
+  width: 100%;
+  max-width: 200px;
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+#accessories .product-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+#accessories .product-image {
+  width: 100%;
+  height: 150px;
+  background-size: cover;
+  background-position: center;
+}
+
+#accessories .product-info {
+  padding: 10px;
+  background-color: #f9f9f9;
+}
+
+#accessories .product-info h3 {
+  margin: 10px 0;
+  font-size: 1.1em;
+  font-weight: 600;
+  color: #d50000; /* Красный цвет */
+}
+
+#accessories .product-info p {
+  color: #333;
+  font-size: 1em;
+  font-weight: 500;
+}
+
+#accessories .active {
+  background-color: #d50000;
+  color: #ffffff;
+  transform: scale(1.1);
+  box-shadow: 0 0 10px rgba(255, 0, 0, 0.7);
+}
+
+#accessories button {
+  padding: 12px 25px;
+  margin: 5px;
+  border: 1px solid #d50000; /* Красная граница */
+  border-radius: 30px;
+  background-color: #ffffff;
+  color: #d50000;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+  font-weight: 600;
+}
+
+#accessories button:hover {
+  background-color: #d50000;
+  color: #ffffff;
+}
+
+#accessories .searchInput {
+  padding: 10px;
+  width: 80%;
+  max-width: 400px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  margin-bottom: 15px;
+}
+
+#accessories .searchButton, .clearButton {
+  padding: 10px 20px;
+  background-color: #d50000;
+  color: #ffffff;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#accessories .searchButton:hover, .clearButton:hover {
+  background-color: #b71c1c;
+}
